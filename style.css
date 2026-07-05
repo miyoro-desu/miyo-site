@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    cursor: none;
 }
 
 body {
@@ -124,6 +125,14 @@ h2{
     text-align: center;
 }
 
+#cursor {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -162,6 +171,9 @@ h2{
         width: 100%;
         height: auto;
         padding: 0;
+    }
+    #cursor{
+        visibility: hidden;
     }
 }
 

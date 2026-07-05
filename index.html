@@ -57,6 +57,7 @@
     </nav>
     <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">© CC BY 4.0</a>
   </footer>
+  <img id="cursor" src="images/favicon.png" alt="">
 </body>
 </html>
 <script>
@@ -68,4 +69,29 @@ fetch("news/Website has been made!.html")
     .catch(error => {
         console.error("Failed to load news:", error);
     });
+
+const cursor = document.getElementById("cursor");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let x = 0;
+let y = 0;
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+function animate() {
+    x += (mouseX - x) * 0.15;
+    y += (mouseY - y) * 0.15;
+
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
+
+    requestAnimationFrame(animate);
+}
+
+animate();
 </script>
