@@ -109,6 +109,10 @@ nav {
     padding: 0;
 }
 
+a{
+    color:#353540;
+}
+
 h1{
     font-weight: bolder;
     font-size: 250%;
