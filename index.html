@@ -17,8 +17,15 @@
     <div id="news-container"></div>
   </aside>
   <section>
-    <h2>Najnowszy Film!</h2>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O-6OVdvJwHc?si=0aVvR_NOdfrUQ5gq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>O mnie</h2>
+    <h3> Jestem Miyoro </h3>
+    <img src="images/miyoro.png" alt="Moje Profilowe" title="tak, sam tworzyłem" width="100vh" height="100vh">
+    <p>YouTuber, Gitarzysta, Wokalista, Gracz, Artysta Komputerowy, i ogólnie (chyba) autysta.</p>
+    <p>Interesuje się programowaniem, rysowaniem, tworzeniem i graniem czy to w gierki czy instrumenty muzyczne.</p>
+    <p>Od młodego pasjonowałem się komputerami, czy to po prostu grając w gierki czy rozkręcając komputery na części pierwsze.</p>
+    <p>W moich latach nastoletnich zacząłem się interesowac muzyką, początkowo od klawiszy / pianina przez akordeon aż po miłośc mojeg życia - Gitarę elektryczną, na której gram od 3 lat i moi nauczyciele mówią mi że bardzo dobrze mi idzie :D</p>
+    <p>Bycie YouTuberem było od zawsze moim marzeniem, i w końcu po tych kilkunastu latach zacząłem je spełniać, i mam nadzieję że mi wyjdzie,</p>
+    <p>A żeby to marzenie mi wyszło, potrzebni jesteście mi <h3>WY</h3></p>
   </section>
   </main>
   <footer>
@@ -54,6 +61,9 @@
       <a href="https://ko-fi.com/miyoro" target="_blank" rel="noopener noreferrer">
       <img src="images/kofi.png" alt="https://ko-fi.com/miyoro" title="Ko-Fi" width="64px" height="64px">
       </a>
+      <a href="https://discord.gg/Pj42w5Vhx3" target="_blank" rel="noopener noreferrer">
+      <img src="images/discord.png" alt="https://discord.gg/Pj42w5Vhx3" title="Discord" width="64px" height="64px">
+      </a>
     </nav>
     <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">© CC BY 4.0</a>
   </footer>
@@ -61,7 +71,7 @@
 </body>
 </html>
 <script>
-fetch("news/Website has been made!.html")
+fetch("news/discord.html")
     .then(response => response.text())
     .then(html => {
         document.getElementById("news-container").innerHTML = html;
