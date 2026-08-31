@@ -1,9 +1,3 @@
-@font-face {
-    font-family: "Munro";
-    src: url("fonts/Munro-2LYe.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
 html,
 body {
     margin: 0;
@@ -18,17 +12,11 @@ body {
     background-color: #353540;
     display: flex;
     flex-direction: column;
-    font-family: "Munro", sans-serif;
-    color: #353540;
-    text-shadow:
-    -2px -2px 0 #ede4da,
-     2px -2px 0 #ede4da,
-    -2px  2px 0 #ede4da,
-     2px  2px 0 #ede4da;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
-    height: 12.5vh;
+    height: 12.5%;
 
     background-color: #668da9;
     background-image: url("images/header-background.png");
@@ -85,6 +73,7 @@ section {
 footer {
     height: 12.5vh;
     font-size: 3.125vh;
+    color: #ede4da;
 
     background-color: #353540;
     background-image: url("images/footer-background.png");
@@ -109,7 +98,9 @@ nav {
     height: auto;
     padding: 0;
 }
-
+p{
+    font-size: 125%;
+}
 a{
     color:#353540;
 }
